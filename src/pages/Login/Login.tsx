@@ -4,7 +4,7 @@ import { Grid, Paper, Typography } from '@material-ui/core';
 
 import LoginForm from '../../components/LoginForm/LoginForm';
 
-import { loginStyles } from './login.styles';
+import { loginStyles } from './Login.styles';
 
 const Login: React.FC = () => {
   const classes = loginStyles();
