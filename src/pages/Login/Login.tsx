@@ -9,8 +9,12 @@ import { loginStyles } from './Login.styles';
 const Login: React.FC = () => {
   const classes = loginStyles();
   return (
-    <Grid container className={classes.root}>
-      <Grid item xs={false} sm={4} md={9} className={classes.image} />
+    <Grid
+      container
+      className={`${classes.root} ${classes.image}`}
+      alignContent="center"
+    >
+      <Grid item xs={false} sm={4} md={9} />
       <Grid item xs={12} sm={8} md={3} component={Paper} elevation={8}>
         <div className={classes.paper}>
           <Typography component="h1" variant="h5">
