@@ -13,9 +13,12 @@ export const loginStyles = makeStyles((theme) => ({
     backgroundRepeat: 'no-repeat'
   },
   paper: {
-    margin: theme.spacing('50%', 4),
+    margin: theme.spacing('30%', 4),
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center'
+  },
+  loginContainer: {
+    maxWidth: '20rem'
   }
 }));
