@@ -13,9 +13,18 @@ const Login: React.FC = () => {
       container
       className={`${classes.root} ${classes.image}`}
       alignContent="center"
+      justifyContent="center"
     >
       <Grid item xs={false} sm={4} md={9} />
-      <Grid item xs={12} sm={8} md={3} component={Paper} elevation={8}>
+      <Grid
+        item
+        xs={12}
+        sm={8}
+        md={3}
+        component={Paper}
+        elevation={20}
+        className={classes.loginContainer}
+      >
         <div className={classes.paper}>
           <Typography component="h1" variant="h5">
             Sign in
