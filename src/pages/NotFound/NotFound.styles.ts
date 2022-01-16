@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-import Image from '../../assets/images/estante_em_l.jpg';
+import Image from '../../assets/images/4041.jpg';
 
 export const notFoundStyles = makeStyles((theme) => ({
   root: {
