@@ -19,6 +19,7 @@ export const loginStyles = makeStyles((theme) => ({
     alignItems: 'center'
   },
   loginContainer: {
-    maxWidth: '20rem'
+    maxWidth: '20rem',
+    backgroundColor: '#FBFBF2'
   }
 }));
