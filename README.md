@@ -37,7 +37,7 @@ Responsible for the complete pages, presenting the encompassing of small compone
 
 This folder is responsible for the codes regarding the connection to the api.<br/><br/>
 
-## Routes
+## Pages
 
 ### `/login`
 
