@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 
 import { Button, TextField } from '@material-ui/core';
 
+import { AuthContext, ILogin } from '../../context/AuthContext';
 import { Inputs } from './LoginForm.interfaces';
 import { loginFromStyles } from './LoginForm.styles';
 
 const LoginForm: React.FC = () => {
+  const authContext = useContext(AuthContext);
   const classes = loginFromStyles();
   const {
     register,
@@ -15,8 +17,10 @@ const LoginForm: React.FC = () => {
     formState: { errors }
   } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = (data) => {
-    alert(JSON.stringify(data));
+  const onSubmit: SubmitHandler<Inputs> = async (data: ILogin) => {
+    const user = await authContext.login(data);
+    //alert(JSON.stringify(user));
+    console.log(user);
   };
 
   //console.log(watch('password'));
