@@ -15,12 +15,8 @@ const Login: React.FC = () => {
       alignContent="center"
       justifyContent="center"
     >
-      <Grid item xs={false} sm={4} md={9} />
       <Grid
         item
-        xs={12}
-        sm={8}
-        md={3}
         component={Paper}
         elevation={20}
         className={classes.loginContainer}
