@@ -15,7 +15,7 @@
     ├── index.js
 ```
 
-## Principal Folders
+## Main Folders
 
 ### Assets
 
